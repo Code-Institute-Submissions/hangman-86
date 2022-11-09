@@ -1,6 +1,7 @@
 # All code or resources used in this project are credited in the README file.
 import random
 from words import word_list
+
 import string
 
 
@@ -11,5 +12,10 @@ def player_nickname():
     nickname = input("\nWho's playing today? ")
 
     return nickname
+
+def get_word():
+    word = random.choice(word_list)
+    return word.upper()
+
 
 
