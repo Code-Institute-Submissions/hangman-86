@@ -1,3 +1,15 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# All code or resources used in this project are credited in the README file.
+import random
+from words import word_list
+import string
+
+
+def player_nickname():
+    """
+    Retrieves the player's nickname. It will be used to give a feedback
+    """
+    nickname = input("\nWho's playing today? ")
+
+    return nickname
+
+
