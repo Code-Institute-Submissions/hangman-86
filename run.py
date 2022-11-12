@@ -2,7 +2,13 @@
 import random
 from words import word_list
 from time import sleep
-from hangman import display_hangman
+from hangman import lives_left
+
+class messages:
+    red = '\033[91m'
+    green = '\033[92m'
+    bold = '\033[1m'
+
 
 def welcome_rules():
     """
@@ -29,9 +35,8 @@ def player_nickname():
     print("\nHave fun, " + f"{nickname.capitalize()}!")
     return nickname
 
-player_nickname()
 
-def get_word():
+def get_word(word_list):
     """
      gets a word from 'words.py' file
      """
