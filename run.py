@@ -6,6 +6,7 @@ from words import word_list
 from time import sleep
 from hangman import lives_left
 
+
 class messages:
     red = '\033[91m'
     green = '\033[92m'
@@ -19,10 +20,12 @@ def welcome_rules():
     """
     print(messages.green + 'Welcome to Hangman! \n')
     sleep(1)
-    print(messages.green + 'Try to guess the random word before you get hung. \n')
+    print(messages.green +
+          'Try to guess the random word before you get hung. \n')
     sleep(1)
     print('----------------------------------------')
     sleep(1)
+
 
 def player_nickname():
     """
@@ -63,10 +66,13 @@ def hangman_game():
     lives = 10
 
     while len(letters_needed) > 0 and lives > 0:
-        print("\nYou've used these letters: ", ' '.join(sorted(letters_guessed)))
+        print("\nYou've used these letters: ",
+              ' '.join(sorted(letters_guessed)))
         print('\nLives left:', lives, )
 
-        word_guess = [letter if letter in letters_guessed else '_' for letter in word]
+        word_guess = [letter if letter in letters_guessed
+                      else '_' for letter in word]
+
         print(messages.green + lives_left[lives])
         print('Current word: ', ' '.join(word_guess))
         print('\n----------------------------------------')
@@ -92,17 +98,21 @@ def hangman_game():
     # player is hanged
     if lives == 0:
         print(messages.red + lives_left[lives])
-        print(messages.bold + f"Oh no, {nickname.capitalize()}, you've been hanged!")
+        print(messages.bold + f"Oh no, "
+                              f"{nickname.capitalize()}, you've been hanged!")
         print("The word was" + messages.red, word)
     else:
         print(messages.bold + f"Congratulations {nickname.capitalize()}!")
         print("You're right, the word was " + word)
 
-hangman_game()
 
 while True:
-    if input("Would you like to play again? Any key = quit, Y = play again ").upper() == "Y":
+    if input("Would you like to play again? Any key = quit, Y = play again ")\
+            .upper() == "Y":
         hangman_game()
     else:
         print(messages.green + "Thanks for playing... \n")
+        print(messages.green + "See you next time for more fun! \n")
         break
+
+hangman_game()
