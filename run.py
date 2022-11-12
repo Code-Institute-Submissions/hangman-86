@@ -17,9 +17,9 @@ def welcome_rules():
     Welcome user to the game
     Display a set of rules for the game
     """
-    print('Welcome to Hangman! \n')
+    print(messages.green + 'Welcome to Hangman! \n')
     sleep(1)
-    print('Try to guess the random word before you get hung. \n')
+    print(messages.green + 'Try to guess the random word before you get hung. \n')
     sleep(1)
     print('----------------------------------------')
     sleep(1)
@@ -99,3 +99,10 @@ def hangman_game():
         print("You're right, the word was " + word)
 
 hangman_game()
+
+while True:
+    if input("Would you like to play again? Any key = quit, Y = play again ").upper() == "Y":
+        hangman_game()
+    else:
+        print(messages.green + "Thanks for playing... \n")
+        break
