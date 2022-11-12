@@ -4,6 +4,18 @@ from words import word_list
 from time import sleep
 from hangman import display_hangman
 
+def welcome_rules():
+    """
+    Welcome user to the game
+    Display a set of rules for the game
+    """
+    print('Welcome to Hangman! \n')
+    sleep(1)
+    print('Try to guess the random word before you get hung. \n')
+    sleep(1)
+    print('----------------------------------------')
+    sleep(1)
+
 def player_nickname():
     """
     Retrieves the player's nickname. It will be used to give a feedback
