@@ -106,13 +106,14 @@ def hangman_game():
         print("You're right, the word was " + word)
 
 
+hangman_game()
+
 while True:
     if input("Would you like to play again? Any key = quit, Y = play again ")\
             .upper() == "Y":
         hangman_game()
     else:
+        print('\n----------------------------------------')
         print(messages.green + "Thanks for playing... \n")
         print(messages.green + "See you next time for more fun! \n")
         break
-
-hangman_game()
