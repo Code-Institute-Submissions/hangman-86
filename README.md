@@ -70,9 +70,9 @@ The players will then have the opportunity to play again if they choose, with a 
 
 ## PEP8 validation (IDE: PyCharm)
 
-I installed and run pep8 on my IDE by following this documentation: [Pep8][https://pypi.org/project/pep8/].
+I installed and run pep8 on my IDE by following this documentation: [Pep8](https://pypi.org/project/pep8/).
 
-During testing, I have been suggested inside my terminal to install [pycodestyle][https://pypi.org/project/pycodestyle/], also formally called pep8.
+During testing, I have been suggested inside my terminal to install [pycodestyle](https://pypi.org/project/pycodestyle/), also formally called pep8.
 It actually helped me to visualized all the warnings in my code.
 
 Before running the tests I had these errors in my terminal: 
