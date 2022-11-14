@@ -167,7 +167,7 @@ To make a copy or ‘fork’ the repository
 
 - I used the Code Institute Python template for this project.
 
-- I used a YouTube tutorial by ![Kite](https://www.youtube.com/c/KiteHQ) for general background knowledge and used his list of words in the words.py file.
+- I used a YouTube tutorial by [Kite](https://www.youtube.com/c/KiteHQ) for general background knowledge and used his list of words in the words.py file.
 
 - For timed space between printed statements I imported sleep() from time, which I found through a Google search.
 
