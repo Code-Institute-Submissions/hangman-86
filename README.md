@@ -87,7 +87,7 @@ I eventually, spaced them out in a new line and that solved the issue.
 
 ## Points of improvement
 
-- The final letter of the game is not currently shown in the 'Current word:', rather it's highlighted as part of the congratulatory message just under the player's final (correct) guess. Aesthetically, it would be best to have both the word completely written out in the game board and written as congratulations below. Missing Letter
+- The final letter of the game is not currently shown in the 'Current word:', rather it's highlighted as part of the congratulatory message just under the player's final (correct) guess. Aesthetically, it would be best to have both the word completely written out in the game board and written as congratulations below.
 
 - I could add a different level of the game based on a user input and changing the number of lives accordingly.
 
