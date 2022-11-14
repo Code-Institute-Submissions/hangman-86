@@ -77,7 +77,7 @@ It actually helped me to visualized all the warnings in my code.
 
 Before running the tests I had these errors in my terminal: 
 
-![Test_Error](./assets/testing_part_one.jpg).
+![Test_Error](./assets/testing_part_one.jpg)
 
 All errors and warnings were fixed, barring a few warnings for 'invalid escape sequence'. These do not affect the functionality of the game.
 I eventually, spaced them out in a new line and that solved the issue.
@@ -139,7 +139,6 @@ This project was deployed on Heroku in the following manner:
 14. Click 'Add' to fill out PORT and 8000 in he KEY / VALUE pair. This has been done.
 
 15. Click 'Add buildpack' and select Node.js from the options.
-
 
 
 ### To Fork the Repository
