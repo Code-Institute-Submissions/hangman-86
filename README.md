@@ -32,7 +32,7 @@ If the letter is not in the word, a life will be lost and a part of the gallows 
 
 The player continues guessing until they complete the word correctly, winning the game, or until all lives are lost and they are hung, signifying their loss. 
 For either outcome, an end of game message will appear incorporating the name the player entered at the beginning. 
-The player will then have the opportunity to play again if they choose, with a different random word.
+The players will then have the opportunity to play again if they choose, with a different random word.
 
 ## Features
 
@@ -54,7 +54,7 @@ The player will then have the opportunity to play again if they choose, with a d
 
 ![Invalid guess](./assets/invalid_guess.png)
 
-* When the game is over, the player is either congratulated or given condolences by name.
+* When the game is over, the players are either congratulated or given condolences by name.
 
 ![Congrats](./assets/congrats.png)
 
@@ -93,6 +93,12 @@ I eventually, spaced them out in a new line and that solved the issue.
 
 - As I mentioned in the 'Testing' section, this application was only tested on laptop devices in various browsers, which was done deliberately. The app is not responsive nor functions on a mobile phone. Since this app is a backend application working through a terminal, I chose to focus on functionality in the terminal. 
 This could however be a point of improvement in the future as it would be fun to be able to play the game on a mobile phone.
+
+## Bugs
+
+To my knowledge, there are no major or unfixed bugs. 
+The game run and does what it is supposed to do.
+
 
 ## Deployment to Heroku
 
@@ -161,7 +167,7 @@ To make a copy or ‘fork’ the repository
 
 - I used the Code Institute Python template for this project.
 
-- I used a YouTube tutorial by ![Kite](https://www.youtube.com/c/KiteHQ) for general background knowledge and used her list of words in the words.py file. I also used her logic in this video to edit out spaces and '-' characters in the list of words used for the game.
+- I used a YouTube tutorial by ![Kite](https://www.youtube.com/c/KiteHQ) for general background knowledge and used his list of words in the words.py file.
 
 - For timed space between printed statements I imported sleep() from time, which I found through a Google search.
 
